@@ -10,7 +10,7 @@ const setupansstart=()=>{
   app.use('/api',apiroutes);
   app.listen(PORT,()=>{
     console.log("server started on port",PORT);
-    if(process.env.sync({alter:true}));
+    db.sequelize.sync({alter:true});
   })
 }
 setupansstart()
