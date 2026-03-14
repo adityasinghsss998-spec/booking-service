@@ -12,3 +12,4 @@ class ValidationError extends Error{
    this.statuscode=StatusCodes.BAD_REQUEST
   }
 }
+module.exports=ValidationError
